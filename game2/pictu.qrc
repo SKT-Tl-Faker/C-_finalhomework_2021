@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/图片6.png</file>
+        <file>music/mus1.mp3</file>
+    </qresource>
+</RCC>
