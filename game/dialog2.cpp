@@ -2,7 +2,8 @@
 #include "dialog.h"
 #include "dialog3.h"
 #include "ui_dialog2.h"
-
+#include<QPixmap>
+#include<QMessageBox>
 Dialog2::Dialog2(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dialog2)
@@ -32,4 +33,13 @@ void Dialog2::on_pushButton_2_clicked()
     Dialog3 *dialog3=new Dialog3;
     this->close();
     dialog3->show();
+}
+
+void Dialog2::on_pushButton_4_clicked()
+{
+    QMessageBox box;
+    box.setText("abc");
+    box.setTextInteractionFlags(Qt::TextSelectableByMouse);
+    box.exec();
+    box.show();
 }

@@ -1,7 +1,7 @@
 #include "dialog6.h"
 #include "dialog5.h"
 #include "ui_dialog6.h"
-
+#include "dialog7.h"
 Dialog6::Dialog6(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dialog6)
@@ -23,5 +23,7 @@ void Dialog6::on_pushButton_clicked()
 
 void Dialog6::on_pushButton_2_clicked()
 {
-    this->close();
+    Dialog7 *dialog7=new Dialog7;
+    this -> close();
+    dialog7 ->show();
 }

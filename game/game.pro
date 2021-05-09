@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = game
@@ -30,7 +30,9 @@ SOURCES += \
     dialog3.cpp \
     dialog4.cpp \
     dialog5.cpp \
-    dialog6.cpp
+    dialog6.cpp \
+    dialog7.cpp \
+    dialog8.cpp
 
 HEADERS += \
         dialog.h \
@@ -38,12 +40,19 @@ HEADERS += \
     dialog3.h \
     dialog4.h \
     dialog5.h \
-    dialog6.h
+    dialog6.h \
+    dialog7.h \
+    dialog8.h
 
 FORMS += \
-        dialog.ui \
     dialog2.ui \
     dialog3.ui \
     dialog4.ui \
     dialog5.ui \
-    dialog6.ui
+    dialog6.ui \
+    dialog.ui \
+    dialog7.ui \
+    dialog8.ui
+
+RESOURCES += \
+    pictu.qrc
